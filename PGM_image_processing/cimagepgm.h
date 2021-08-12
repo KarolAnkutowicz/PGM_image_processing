@@ -17,7 +17,7 @@ class cImagePGM
 {
 /********** PRIVATE: BEGIN **********/
 
-    \
+
 /********** PRIVATE: END **********/
 
 /********** PUBLIC: BEGIN **********/
