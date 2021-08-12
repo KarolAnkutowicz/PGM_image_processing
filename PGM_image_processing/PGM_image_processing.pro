@@ -19,4 +19,5 @@ SOURCES += main.cpp \
     cimagepgm.cpp
 
 HEADERS += \
-    cimagepgm.h
+    cimagepgm.h \
+    constantsandtypes.h
