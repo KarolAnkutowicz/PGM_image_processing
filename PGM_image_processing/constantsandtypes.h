@@ -12,20 +12,26 @@ using namespace std;
 /*
  * enum Operations - typ wyliczeniowy zawierajacy elementy
  * reprezentujace kolejne operacje mozliwe do wykonania
- * na plikach graficznych
+ * na plikach graficznych.
  */
 enum Operations {negative, thresholding, multithresholding,
                 edge_detection, segmentation, seam_carving};
 
 /*
  * enum EdgeDetection - typ wyliczeniowy zawierajacy elementy
- * reprezentujace kolejne algorytmy wykrywania krawedzi
+ * reprezentujace kolejne algorytmy wykrywania krawedzi.
  */
 enum EdgeDetection {roberts, prewitt, sobel, scharr, canny};
 
 /*
+ * typedef unsigned short typeSize - synonim typu dla
+ * wymiarow obrazu PGM.
+ */
+typedef unsigned int typeSize;
+
+/*
  * const char constNameOfFile - stala przechowujaca dlugosc
- * nazwy pliku graficznego
+ * nazwy pliku graficznego.
  */
 const char constNameOfFile = 20;
 

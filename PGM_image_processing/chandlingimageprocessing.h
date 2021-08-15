@@ -9,6 +9,10 @@
 
 using namespace std;
 
+/*
+ * class cHandlingImageProcessing - klasa modelujaca
+ * obsluge przetwarzania obrazow PGM.
+ */
 class cHandlingImageProcessing
 {
 /********** PRIVATE: BEGIN **********/

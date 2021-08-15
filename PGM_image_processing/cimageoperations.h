@@ -9,6 +9,11 @@
 
 using namespace std;
 
+/*
+ * class cImageOperations - klasa modelujaca zbior
+ * operacji, ktore mozna przeprowadzic na obrazie
+ * w formacie PGM.
+ */
 class cImageOperations
 {
 /********** PRIVATE: BEGIN **********/
