@@ -15,10 +15,6 @@ using namespace std;
  */
 class cHandlingImageProcessing
 {
-/********** PRIVATE: BEGIN **********/
-
-/********** PRIVATE: END **********/
-
 /********** PUBLIC: BEGIN **********/
 public:
     cHandlingImageProcessing();

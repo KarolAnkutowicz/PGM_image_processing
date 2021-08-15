@@ -57,7 +57,7 @@ class cImagePGM
 public:
     cImagePGM();
 
-/********** PUBLIC: BEGIN **********/
+/********** PUBLIC: END **********/
 };
 
 #endif // CIMAGEPGM_H

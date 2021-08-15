@@ -15,7 +15,7 @@ using namespace std;
  * na plikach graficznych.
  */
 enum Operations {negative, thresholding, multithresholding,
-                edge_detection, segmentation, seam_carving};
+                edge_detection, seam_carving};
 
 /*
  * enum EdgeDetection - typ wyliczeniowy zawierajacy elementy
