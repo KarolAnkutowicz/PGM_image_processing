@@ -17,9 +17,11 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     cimagepgm.cpp \
-    cimageoperations.cpp
+    cimageoperations.cpp \
+    chandlingimageprocessing.cpp
 
 HEADERS += \
     cimagepgm.h \
     constantsandtypes.h \
-    cimageoperations.h
+    cimageoperations.h \
+    chandlingimageprocessing.h

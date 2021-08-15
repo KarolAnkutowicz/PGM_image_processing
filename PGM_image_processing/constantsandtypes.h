@@ -7,6 +7,8 @@
 #ifndef CONSTANTSANDTYPES_H
 #define CONSTANTSANDTYPES_H
 
+using namespace std;
+
 /*
  * enum Operations - typ wyliczeniowy zawierajacy elementy
  * reprezentujace kolejne operacje mozliwe do wykonania

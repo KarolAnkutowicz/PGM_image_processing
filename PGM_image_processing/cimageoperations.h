@@ -7,6 +7,8 @@
 #ifndef CIMAGEOPERATIONS_H
 #define CIMAGEOPERATIONS_H
 
+using namespace std;
+
 class cImageOperations
 {
 /********** PRIVATE: BEGIN **********/

@@ -1,10 +1,12 @@
 /********** BEGIN_OF_FILE **********/
 /*
  * author: Karol Ankutowicz
- * file: main.cpp
+ * file: cimagepgm.cpp
  */
 
 #include "cimagepgm.h"
+
+using namespace std;
 
 using namespace std;
 
@@ -16,5 +18,5 @@ cImagePGM::cImagePGM()
 
 /********** PUBLIC: END **********/
 
-/* main.cpp */
+/* cimagepgm.cpp */
 /********** END_OF_FILE **********/

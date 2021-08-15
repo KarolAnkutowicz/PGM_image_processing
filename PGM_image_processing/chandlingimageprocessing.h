@@ -1,33 +1,28 @@
 /********** BEGIN_OF_FILE **********/
 /*
  * author: Karol Ankutowicz
- * file: cimagepgm.h
+ * file: chandlingimageprocessing.h
  */
 
-#ifndef CIMAGEPGM_H
-#define CIMAGEPGM_H
+#ifndef CHANDLINGIMAGEPROCESSING_H
+#define CHANDLINGIMAGEPROCESSING_H
 
 using namespace std;
 
-/*
- * class cImagePGM - klasa modelujaca plik graficzny
- * w formacie PGM
- */
-class cImagePGM
+class cHandlingImageProcessing
 {
 /********** PRIVATE: BEGIN **********/
-
 
 /********** PRIVATE: END **********/
 
 /********** PUBLIC: BEGIN **********/
 public:
-    cImagePGM();
+    cHandlingImageProcessing();
 
-/********** PUBLIC: BEGIN **********/
+/********** PUBLIC: END **********/
 };
 
-#endif // CIMAGEPGM_H
+#endif // CHANDLINGIMAGEPROCESSING_H
 
-/* cimagepgm.h */
+/* chandlingimageprocessing.h */
 /********** END_OF_FILE **********/

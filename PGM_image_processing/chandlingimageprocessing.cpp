@@ -1,20 +1,20 @@
 /********** BEGIN_OF_FILE **********/
 /*
  * author: Karol Ankutowicz
- * file: cimageoperations.cpp
+ * file: chandlingimageprocessing.cpp
  */
 
-#include "cimageoperations.h"
+#include "chandlingimageprocessing.h"
 
 using namespace std;
 
 /********** PUBLIC: BEGIN **********/
 
-cImageOperations::cImageOperations()
+cHandlingImageProcessing::cHandlingImageProcessing()
 {
 }
 
 /********** PUBLIC: END **********/
 
-/* cimageoperations.cpp */
+/* chandlingimageprocessing.cpp */
 /********** END_OF_FILE **********/
