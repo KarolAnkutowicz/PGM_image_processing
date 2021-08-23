@@ -35,6 +35,24 @@ typedef unsigned int typeSize;
  */
 const char constNameOfFile = 20;
 
+/*
+ * const typeSize constHeigth - stala przechowujaca domyslna
+ * wysokosc (w pikselach) obrazu.
+ */
+const typeSize constHeigth = 48;
+
+/*
+ * const typeSize conbstWeigth - stala przechowujaca domyslna
+ * szerokosc (w pikselach) obrazu.
+ */
+const typeSize conbstWeigth = 64;
+
+/*
+ * const typeSize constGreyLevel - stala przechowujaca domyslna
+ * liczba odcieni szarosci.
+ */
+const typeSize constGreyLevel = 16;
+
 #endif // CONSTANTSANDTYPES_H
 
 /* constantsandtypes.h */
