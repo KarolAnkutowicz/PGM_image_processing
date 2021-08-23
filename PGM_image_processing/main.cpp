@@ -4,10 +4,14 @@
  * file: main.cpp
  */
 
+#include "chandlingimageprocessing.h"
+
 using namespace std;
 
 int main()
 {
+    cHandlingImageProcessing H;
+
     return 0;
 }
 
