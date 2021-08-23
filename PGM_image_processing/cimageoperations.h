@@ -27,7 +27,7 @@ public:
      * PRE:
      * - brak;
      * POST:
-     * - utowrzenie obiektu klasy cImageOpeartions.
+     * - utworzenie obiektu klasy cImageOpeartions.
      */
     cImageOperations();
 
