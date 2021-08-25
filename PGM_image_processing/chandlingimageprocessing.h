@@ -32,6 +32,11 @@ public:
     cHandlingImageProcessing();
 
     /*
+     * char vOption - pole przechowujace wybrana opcje.
+     */
+    char vOption;
+
+    /*
      * void mMainMenu() - metoda wyswietlajaca menu glowne
      * programu.
      * PRE:
@@ -62,16 +67,6 @@ public:
     void mHandlingTresholdingAndNegative();
 
     /*
-     * void mHandlingSeamCarving() - metoda obslugujaca operacje
-     * seam carving.
-     * PRE:
-     * - brak;
-     * POST:
-     * - brak.
-     */
-    void mHandlingSeamCarving();
-
-    /*
      * void mHandlingEdgeDetection() - metoda obslugujaca operacje
      * wykrywania krawedzi.
      * PRE:
@@ -80,6 +75,16 @@ public:
      * - brak.
      */
     void mHandlingEdgeDetection();
+
+    /*
+     * void mHandlingSeamCarving() - metoda obslugujaca operacje
+     * seam carving.
+     * PRE:
+     * - brak;
+     * POST:
+     * - brak.
+     */
+    void mHandlingSeamCarving();
 
 /********** PUBLIC: END **********/
 };
