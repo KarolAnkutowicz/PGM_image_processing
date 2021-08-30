@@ -8,7 +8,9 @@
 #define CIMAGEPGM_H
 
 #include "constantsandtypes.h"
+#include <cstdlib>
 #include <cstring>
+#include <ctime>
 #include <fstream>
 #include <iostream>
 

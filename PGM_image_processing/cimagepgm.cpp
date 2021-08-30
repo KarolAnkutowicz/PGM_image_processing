@@ -111,7 +111,10 @@ void cImagePGM::mCreateFile(char *aTabName)
  */
 void cImagePGM::mDrawPixels()
 {
-
+    srand(time_t(NULL)); // ustanowienei wartosci losowej
+    for (typeSize i = 0; i < vHeigth; i++) // przejscie po wszystkich wierszach
+        for (typeSize j = 0; j < vWidth; j++) // przejscie po wszystkich kolumnach
+            vTabPixels[i * vWidth + j] = rand() % vNumberOfGreyLevel; // wylosowanie wartosci
 }
 
 /*
@@ -119,7 +122,10 @@ void cImagePGM::mDrawPixels()
  */
 void cImagePGM::mDrawPixels(typeSize aNumberOfGreyLevel)
 {
-
+    srand(time_t(NULL)); // ustanowienei wartosci losowej
+    for (typeSize i = 0; i < vHeigth; i++) // przejscie po wszystkich wierszach
+        for (typeSize j = 0; j < vWidth; j++) // przejscie po wszystkich kolumnach
+            vTabPixels[i * vWidth + j] = rand() % aNumberOfGreyLevel; // wylosowanie wartosci
 }
 
 
