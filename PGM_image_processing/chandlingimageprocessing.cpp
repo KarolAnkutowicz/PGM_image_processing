@@ -13,6 +13,7 @@ using namespace std;
 
 cHandlingImageProcessing::cHandlingImageProcessing()
 {
+    mMainHandling(); // wywolanie glownej obslugi programu
 }
 
 /*
@@ -59,7 +60,12 @@ void cHandlingImageProcessing::mMainHandling()
  */
 void cHandlingImageProcessing::mHandlingTresholdingAndNegative()
 {
-
+    switch(vOption)
+    {
+    case '1': cout << "Negatyw" << endl; break;
+    case '2': cout << "Progowanie dwupoziomowe" << endl; break;
+    case '3': cout << "Progowanie wielopoziomowe" << endl; break;
+    }
 }
 
 /*
@@ -67,7 +73,14 @@ void cHandlingImageProcessing::mHandlingTresholdingAndNegative()
  */
 void cHandlingImageProcessing::mHandlingEdgeDetection()
 {
-
+    switch(vOption)
+    {
+    case '4': cout << "Roberts" << endl; break;
+    case '5': cout << "Prewitt" << endl; break;
+    case '6': cout << "Sobel" << endl; break;
+    case '7': cout << "Scharr" << endl; break;
+    case '8': cout << "Canny" << endl; break;
+    }
 }
 
 /*
@@ -75,7 +88,7 @@ void cHandlingImageProcessing::mHandlingEdgeDetection()
  */
 void cHandlingImageProcessing::mHandlingSeamCarving()
 {
-
+    cout << "Seam carving" << endl;
 }
 
 /********** PUBLIC: END **********/

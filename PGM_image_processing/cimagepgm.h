@@ -8,6 +8,7 @@
 #define CIMAGEPGM_H
 
 #include "constantsandtypes.h"
+#include <cstring>
 #include <fstream>
 #include <iostream>
 
@@ -46,10 +47,10 @@ class cImagePGM
     typeSize vWidth;
 
     /*
-     * typeSize *tabPixels - tablica przechowujaca
+     * typeSize *vTabPixels - tablica przechowujaca
      * elementy obrazu (piksele).
      */
-    typeSize *tabPixels;
+    typeSize *vTabPixels;
 
 /********** PRIVATE: END **********/
 
@@ -65,8 +66,8 @@ public:
     cImagePGM();
 
     /*
-     * cImagePGM() - konstruktor wywolywany z dwoma argumentami -
-     * wymiarami obrazu.
+     * cImagePGM(typeSize aHeigth, typeSize aWidth) - konstruktor
+     * wywolywany z dwoma argumentami - wymiarami obrazu.
      * PRE:
      * - podanie wysokosci obrazu w pikselach (typ: typeSize);
      * - podanie szerokosci obrazu w pikselach (typ: typeSize);
@@ -76,8 +77,9 @@ public:
     cImagePGM(typeSize aHeigth, typeSize aWidth);
 
     /*
-     * cImagePGM() - konstruktor wywolywany z trzema argumentami -
-     * wymiarami obrazu oraz liczba stopni szarosci.
+     * cImagePGM(typeSize aHeigth, typeSize aWidth, typeSize aNumberOfGreyLevel) -
+     * konstruktor wywolywany z trzema argumentami - wymiarami
+     * obrazu oraz liczba stopni szarosci.
      * PRE:
      * - podanie wysokosci obrazu w pikselach (typ: typeSize);
      * - podanie szerokosci obrazu w pikselach (typ: typeSize);
@@ -88,8 +90,9 @@ public:
     cImagePGM(typeSize aHeigth, typeSize aWidth, typeSize aNumberOfGreyLevel);
 
     /*
-     * cImagePGM() - konstruktor wywolywany z czterema argmentami -
-     * wymiarami obrazu, liczba stopni szarosci oraz wskaznikiem
+     * cImagePGM(typeSize aHeigth, typeSize aWidth, typeSize aNumberOfGreyLevel, typeSize *aTabPixels) -
+     * konstruktor wywolywany z czterema argmentami - wymiarami
+     * obrazu, liczba stopni szarosci oraz wskaznikiem
      * do tablicy elementow obrazu.
      * PRE:
      * - podanie wysokosci obrazu w pikselach (typ: typeSize);
@@ -102,8 +105,9 @@ public:
     cImagePGM(typeSize aHeigth, typeSize aWidth, typeSize aNumberOfGreyLevel, typeSize *aTabPixels);
 
     /*
-     * cImagePGM() - konstruktor wywolywany z jednym argumentem -
-     * nazwa pliku graficznego w formacie PGM.
+     * cImagePGM(char *aTabName) - konstruktor wywolywany
+     * z jednym argumentem - nazwa pliku graficznego
+     * w formacie PGM.
      * PRE:
      * - podanie nazwy pliku w formacie PGM (typ: *char);
      * POST:
@@ -112,7 +116,7 @@ public:
     cImagePGM(char *aTabName);
 
     /*
-     * cImagePGM() - destruktor klasy cImagePGM
+     * cImagePGM() - destruktor klasy cImagePGM.
      * PRE:
      * - brak;
      * POST:

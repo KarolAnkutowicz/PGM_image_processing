@@ -42,10 +42,10 @@ const char constNameOfFile = 20;
 const typeSize constHeigth = 48;
 
 /*
- * const typeSize conbstWeigth - stala przechowujaca domyslna
+ * const typeSize constWidth - stala przechowujaca domyslna
  * szerokosc (w pikselach) obrazu.
  */
-const typeSize conbstWeigth = 64;
+const typeSize constWidth = 64;
 
 /*
  * const typeSize constGreyLevel - stala przechowujaca domyslna
