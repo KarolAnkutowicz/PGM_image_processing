@@ -24,4 +24,5 @@ HEADERS += \
     cimagepgm.h \
     constantsandtypes.h \
     cimageoperations.h \
-    chandlingimageprocessing.h
+    chandlingimageprocessing.h \
+    masksedgedetection.h

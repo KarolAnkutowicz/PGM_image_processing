@@ -24,10 +24,10 @@ enum Operations {negative, thresholding, multithresholding,
 enum EdgeDetection {roberts, prewitt, sobel, scharr, canny};
 
 /*
- * typedef unsigned short typeSize - synonim typu dla
+ * typedef int typeSize - synonim typu dla
  * wymiarow obrazu PGM.
  */
-typedef unsigned int typeSize;
+typedef int typeSize;
 
 /*
  * const char constNameOfFile - stala przechowujaca dlugosc
