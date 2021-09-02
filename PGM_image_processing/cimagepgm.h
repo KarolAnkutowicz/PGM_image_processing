@@ -126,6 +126,63 @@ public:
      */
     ~cImagePGM();
 
+
+
+    /*
+     * typeSize getNumberOfGreyLevel() - metoda
+     * zwracajaca wartosc pola vNumberOfGreyLevel.
+     * PRE:
+     * - brak;
+     * POST:
+     * - zwrocenie wartosci pola vNumberOfGreyLevel.
+     */
+    inline typeSize getNumberOfGreyLevel()
+    {
+        return vNumberOfGreyLevel;
+    }
+
+    /*
+     * typeSize getHeigth() - metoda zwracajaca
+     * wartosc pola vHeigth.
+     * PRE:
+     * - brak;
+     * POST:
+     * - zwrocenie wartosci pola vHeigth.
+     */
+    inline typeSize getHeigth()
+    {
+        return vHeigth;
+    }
+
+    /*
+     * typeSize getWidth() - metoda zwracajaca
+     * wartosc pola vWidth.
+     * PRE:
+     * - brak;
+     * POST:
+     * - zwrocenie wartosci pola vWidth.
+     */
+    inline typeSize getWidth()
+    {
+        return vWidth;
+    }
+
+    /*
+     * typeSize getPixel(typeSize aHeigth, typeSize aWidth) -
+     * PRE:
+     * - podanie numeru wiersza (typ: typeSize);
+     * - podanie numeru kolumny (typ: typeSize);
+     * POST:
+     * - zwrocenie wartosci wskazanego elementu
+     * tablicy vTabPixels.
+     */
+    inline typeSize getPixel(typeSize aHeigth, typeSize aWidth)
+    {
+        return vTabPixels[aHeigth * vWidth + aWidth];
+    }
+
+
+
     /*
      * void mReadFile(char *aTabName) - metoda wczytujaca plik
      * w formacie PGM o dowolnej nazwie.
@@ -155,6 +212,8 @@ public:
      * - brak.
      */
     void mCreateFile(char *aTabName);
+
+
 
     /*
      * void mDrawPixels() - metoda losujaca wartosc pikseli

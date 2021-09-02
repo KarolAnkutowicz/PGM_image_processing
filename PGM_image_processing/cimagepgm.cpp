@@ -87,7 +87,10 @@ cImagePGM::~cImagePGM()
  */
 void cImagePGM::mReadFile(char *aTabName)
 {
-
+    /*ifstream streamIn;
+    //typeSize vValue;
+    //string vLine;
+    streamIn.open(aTabName);*/
 }
 
 /*
@@ -103,7 +106,10 @@ void cImagePGM::mCreateFile()
  */
 void cImagePGM::mCreateFile(char *aTabName)
 {
-
+    /*ofstream streamOut;
+    ofstream.open(aTabName);
+    ofstream << "P2" << endl << "#" << endl
+             << */
 }
 
 /*
