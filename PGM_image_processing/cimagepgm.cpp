@@ -88,8 +88,8 @@ cImagePGM::~cImagePGM()
 void cImagePGM::mReadFile(char *aTabName)
 {
     /*ifstream streamIn;
-    //typeSize vValue;
-    //string vLine;
+    typeSize vValue;
+    string vLine;
     streamIn.open(aTabName);*/
 }
 
@@ -98,7 +98,15 @@ void cImagePGM::mReadFile(char *aTabName)
  */
 void cImagePGM::mCreateFile()
 {
-
+    ofstream streamOut; // utworzenie strumienia plikowego
+    streamOut.open("untitled.pgm"); // otwarcie strumienia dla wskazanego pliku
+    streamOut << "P2" << endl << "#" << endl // wypisanie kolejnych parametrow pliku graficznego PGM
+              << getHeigth() << " " << getWidth() << endl
+              << getNumberOfGreyLevel() << endl;
+    for (typeSize i = 0; i < vHeigth; i++) // przejscie po wszystkich wierszach
+        for (typeSize j = 0; j < vWidth; j++) // przejscie po wszystkich kolumnach
+            streamOut << vTabPixels[i * vWidth + j] << " "; // wypisanie wartosci piksela.
+    streamOut.close(); // zamkniecie strumienia
 }
 
 /*
@@ -106,10 +114,15 @@ void cImagePGM::mCreateFile()
  */
 void cImagePGM::mCreateFile(char *aTabName)
 {
-    /*ofstream streamOut;
-    ofstream.open(aTabName);
-    ofstream << "P2" << endl << "#" << endl
-             << */
+    ofstream streamOut; // utworzenie strumienia plikowego
+    streamOut.open(aTabName); // otwarcie strumienia dla wskazanego pliku
+    streamOut << "P2" << endl << "#" << endl // wypisanie kolejnych parametrow pliku graficznego PGM
+              << getHeigth() << " " << getWidth() << endl
+              << getNumberOfGreyLevel() << endl;
+    for (typeSize i = 0; i < vHeigth; i++) // przejscie po wszystkich wierszach
+        for (typeSize j = 0; j < vWidth; j++) // przejscie po wszystkich kolumnach
+            streamOut << vTabPixels[i * vWidth + j] << " "; // wypisanie wartosci piksela.
+    streamOut.close(); // zamkniecie strumienia
 }
 
 /*

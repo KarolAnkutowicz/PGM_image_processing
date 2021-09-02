@@ -54,6 +54,60 @@ class cImagePGM
      */
     typeSize *vTabPixels;
 
+    /*
+     * void setNumberOfGreyLevel(typeSize aNumberOfGreyLevel) -
+     * metoda zmieniajaca wartosc pola vNumberOfGreyLevel.
+     * PRE:
+     * - podanie liczby poziomow szarosci (typ: typeSize);
+     * POST:
+     * - brak.
+     */
+    inline void setNumberOfGreyLevel(typeSize aNumberOfGreyLevel)
+    {
+        vNumberOfGreyLevel = aNumberOfGreyLevel;
+    }
+
+    /*
+     * void setHeigth(typeSize aHeigth) - metoda
+     * zmieniajaca wartosc pola vHeigth.
+     * PRE:
+     * - podanie wysokosci obrazu (typ: typeSize);
+     * POST:
+     * - brak.
+     */
+    inline void setHeigth(typeSize aHeigth)
+    {
+        vHeigth = aHeigth;
+    }
+
+    /*
+     * void setWidth(typeSize aWidth) - metoda
+     * zmieniajaca wartosc pola vWidth.
+     * PRE:
+     * - podanie szerokosci obrazu (typ: typeSize);
+     * POST:
+     * - brak.
+     */
+    inline void setWidth(typeSize aWidth)
+    {
+        vWidth = aWidth;
+    }
+
+    /*
+     * void setPixel(typeSize aHeigth, typeSize aWidth, typeSize aValue) -
+     * metoda zmieniajaca wartosc wskazanego piksela.
+     * PRE:
+     * - podanie numeru wiersza (typ: typeSize);
+     * - podanie numeru kolumny (typ: typeSize);
+     * - podanie wartosci piksela (typ: typeSize);
+     * POST:
+     * - brak.
+     */
+    inline void setPixel(typeSize aHeigth, typeSize aWidth, typeSize aValue)
+    {
+        vTabPixels[aHeigth * vWidth + aWidth] = aValue;
+    }
+
 /********** PRIVATE: END **********/
 
 /********** PUBLIC: BEGIN **********/
