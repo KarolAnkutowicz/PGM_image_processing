@@ -291,6 +291,100 @@ public:
      */
     void mDrawPixels(typeSize aNumberOfGreyLevel);
 
+
+
+    /*
+     * void mMakeNegative() - metoda realizujaca wykonanie
+     * operacji negatywu obrazu.
+     * PRE:
+     * - brak;
+     * POST:
+     * - zwrocenie obiektu wynikowego (typ: cImagePGM).
+     */
+    cImagePGM mMakeNegative();
+
+    /*
+     * cImagePGM mMakeTresholding() - metoda realizujaca
+     * wykonanie operacji progowania dwupoziomowego.
+     * PRE:
+     * - brak;
+     * POST:
+     * - zwrocenie obiektu wynikowego (typ: cImagePGM).
+     */
+    cImagePGM mMakeTresholding();
+
+    /*
+     * cImagePGM mMakeMultitresholding() - metoda
+     * realizujaca wykonanie operacji progowania
+     * wielopoziomowego.
+     * PRE:
+     * - brak;
+     * POST:
+     * - zwrocenie obiektu wynikowego (typ: cImagePGM).
+     */
+    cImagePGM mMakeMultitresholding();
+
+    /*
+     * cImagePGM mMakeSeamCarving() - metoda realizujaca
+     * wykonaie operacji seam carving.
+     * PRE:
+     * - brak;
+     * POST:
+     * - zwrocenie obiektu wynikowego (typ: cImagePGM).
+     */
+    cImagePGM mMakeSeamCarving();
+
+    /*
+     * cImagePGM mMakeEdgeRoberts() - metoda realizujaca
+     * operacje wykrywania krawedzi za pomoca krzyza Robertsa.
+     * PRE:
+     * - brak;
+     * POST:
+     * - zwrocenie obiektu wynikowego (typ: cImagePGM).
+     */
+    cImagePGM mMakeEdgeRoberts();
+
+    /*
+     * cImagePGM mMakeEdgePrewitt() - metoda realizujaca
+     * operacje wykrywania krawedzi za pomoca masek Prewitta.
+     * PRE:
+     * - brak;
+     * POST:
+     * - zwrocenie obiektu wynikowego (typ: cImagePGM).
+     */
+    cImagePGM mMakeEdgePrewitt();
+
+    /*
+     * cImagePGM mMakeEdgeSobel() - metoda realizujaca
+     * operacje wykrywania krawedzi za pomoca masek Sobela.
+     * PRE:
+     * - brak;
+     * POST:
+     * - zwrocenie obiektu wynikowego (typ: cImagePGM).
+     */
+    cImagePGM mMakeEdgeSobel();
+
+    /*
+     * cImagePGM mMakeEdgeScharr() - metoda realizujaca
+     * operacje wykrywania krawedzi za pomoca masek Scharra.
+     * PRE:
+     * - brak;
+     * POST:
+     * - zwrocenie obiektu wynikowego (typ: cImagePGM).
+     */
+    cImagePGM mMakeEdgeScharr();
+
+    /*
+     * cImagePGM mMakeEdgeCanny() - metoda realizujaca
+     * operacje wykrywania krawedzi za pomoca wieloetapowego
+     * algorytmu Canny'ego.
+     * PRE:
+     * - brak;
+     * POST:
+     * - zwrocenie obiektu wynikowego (typ: cImagePGM).
+     */
+    cImagePGM mMakeEdgeCanny();
+
 /********** PUBLIC: END **********/
 };
 

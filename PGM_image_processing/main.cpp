@@ -5,6 +5,7 @@
  */
 
 #include "chandlingimageprocessing.h"
+#include "cimagepgm.h"
 
 using namespace std;
 

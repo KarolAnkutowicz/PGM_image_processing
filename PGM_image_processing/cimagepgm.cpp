@@ -8,8 +8,6 @@
 
 using namespace std;
 
-using namespace std;
-
 /********** PUBLIC: BEGIN **********/
 
 /*
@@ -149,7 +147,77 @@ void cImagePGM::mDrawPixels(typeSize aNumberOfGreyLevel)
 
 
 
+/*
+ * void mMakeNegative()
+ */
+/*cImagePGM cImagePGM::mMakeNegative()
+{
 
+}*/
+
+/*
+ * cImagePGM mMakeTresholding()
+ */
+/*cImagePGM cImagePGM::mMakeTresholding()
+{
+
+}*/
+
+/*
+ * cImagePGM mMakeMultitresholding()
+ */
+/*cImagePGM cImagePGM::mMakeMultitresholding()
+{
+
+}*/
+
+/*
+ * cImagePGM mMakeSeamCarving()
+ */
+/*cImagePGM cImagePGM::mMakeSeamCarving()
+{
+
+}*/
+
+/*
+ * cImagePGM mMakeEdgeRoberts()
+ */
+/*cImagePGM cImagePGM::mMakeEdgeRoberts()
+{
+
+}*/
+
+/*
+ * cImagePGM mMakeEdgePrewitt()
+ */
+/*cImagePGM cImagePGM::mMakeEdgePrewitt()
+{
+
+}*/
+
+/*
+ * cImagePGM mMakeEdgeSobel()
+ */
+/*cImagePGM cImagePGM::mMakeEdgeSobel()
+{
+
+}*/
+
+/*
+ * cImagePGM mMakeEdgeScharr()
+ */
+/*cImagePGM cImagePGM::mMakeEdgeScharr()
+{
+
+}*/
+
+/*
+ * cImagePGM mMakeEdgeCanny()
+ */
+/*cImagePGM cImagePGM::mMakeEdgeCanny()
+{
+
+}*/
 
 /********** PUBLIC: END **********/
 

@@ -7,7 +7,6 @@
 #ifndef CHANDLINGIMAGEPROCESSING_H
 #define CHANDLINGIMAGEPROCESSING_H
 
-#include "cimageoperations.h"
 #include "cimagepgm.h"
 #include <iostream>
 

@@ -9,6 +9,8 @@
 
 #include "constantsandtypes.h"
 
+using namespace std;
+
 /*
  * const typeSize constRoberts_[4] - maski
  * operatora Robertsa do wykrywania krawedzi.

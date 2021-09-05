@@ -39,19 +39,19 @@ const char constNameOfFile = 20;
  * const typeSize constHeigth - stala przechowujaca domyslna
  * wysokosc (w pikselach) obrazu.
  */
-const typeSize constHeigth = 48;
+const typeSize constHeigth = 24;
 
 /*
  * const typeSize constWidth - stala przechowujaca domyslna
  * szerokosc (w pikselach) obrazu.
  */
-const typeSize constWidth = 64;
+const typeSize constWidth = 32;
 
 /*
  * const typeSize constGreyLevel - stala przechowujaca domyslna
  * liczba odcieni szarosci.
  */
-const typeSize constGreyLevel = 16;
+const typeSize constGreyLevel = 8;
 
 #endif // CONSTANTSANDTYPES_H
 
